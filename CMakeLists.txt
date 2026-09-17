@@ -32,7 +32,7 @@ else ()
     set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS "-flto")
 endif ()
 
-target_include_directories(${PROJECT_NAME} PRIVATE include)
+target_include_directories(${PROJECT_NAME} PRIVATE include libs/lemon/include)
 target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt)
 target_link_libraries(${PROJECT_NAME} PRIVATE spdlog)
 target_link_libraries(${PROJECT_NAME} PRIVATE cxxopts)
